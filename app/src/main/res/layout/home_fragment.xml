@@ -83,6 +83,7 @@
                     android:layout_height="150dp">
                     <RelativeLayout
                         android:id="@+id/tombolFood"
+                        android:onClick="menuFood"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/white">

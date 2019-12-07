@@ -29,6 +29,33 @@ public class MainActivity extends AppCompatActivity {
         botNav.setOnNavigationItemSelectedListener(navListener);
     }
 
+
+    public void menuFood(View view){
+        /* Untuk Menu Food */
+        /* Beri view food list */
+        Fragment selectedFragment = new fragment_list_food();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+
+    }
+
+    public  void menuHotel(View view){
+        /* Untuk Menu Hotel*/
+
+    }
+
+    public  void menuTravel(View view){
+        /* Untuk Menu Travel */
+    }
+
+
+    public  void menuAccessories(View view){
+        /* Untuk Menu Accessories*/
+
+
+    }
+
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
