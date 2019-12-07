@@ -63,8 +63,7 @@
             android:fontFamily="sans-serif-light"/>
 
         <LinearLayout
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
             android:orientation="vertical"
             android:layout_marginTop="40dp"
             android:layout_below="@+id/header2"
@@ -83,7 +82,7 @@
                     android:layout_width="130dp"
                     android:layout_height="150dp">
                     <RelativeLayout
-                        android:id="@+id/lini1"
+                        android:id="@+id/tombolFood"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/white">
@@ -117,7 +116,7 @@
                     android:layout_width="130dp"
                     android:layout_height="150dp">
                     <RelativeLayout
-                        android:id="@+id/lini1"
+                        android:id="@+id/tombolHotel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/white">
@@ -125,7 +124,7 @@
                         <ImageView
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"
-                            android:id="@+id/imgFood"
+                            android:id="@+id/imgHotel"
                             android:layout_width="match_parent"
                             android:layout_height="70dp"
                             android:src="@drawable/hotel"/>
@@ -133,7 +132,7 @@
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginTop="10dp"
                             android:layout_centerHorizontal="true"
-                            android:layout_below="@+id/imgFood"
+                            android:layout_below="@+id/imgHotel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hotel"
@@ -157,13 +156,13 @@
                     android:layout_height="150dp">
 
                     <RelativeLayout
-                        android:id="@+id/lini1"
+                        android:id="@+id/tombolTravel"
                         android:layout_width="131dp"
                         android:layout_height="wrap_content"
                         android:background="@color/white">
 
                         <ImageView
-                            android:id="@+id/imgFood"
+                            android:id="@+id/imgTravel"
                             android:layout_width="match_parent"
                             android:layout_height="70dp"
                             android:layout_centerHorizontal="true"
@@ -173,7 +172,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/imgFood"
+                            android:layout_below="@+id/imgTravel"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif-medium"
@@ -200,7 +199,7 @@
                         <ImageView
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"
-                            android:id="@+id/imgFood"
+                            android:id="@+id/imgMall"
                             android:layout_width="match_parent"
                             android:layout_height="70dp"
                             android:src="@drawable/cart"/>
@@ -208,7 +207,7 @@
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginTop="10dp"
                             android:layout_centerHorizontal="true"
-                            android:layout_below="@+id/imgFood"
+                            android:layout_below="@+id/imgMall"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mall"

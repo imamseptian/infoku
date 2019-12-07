@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Beri view pertama adalah home2_fragment*/
+        Fragment selectedFragment = new fragment_home();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+
         BottomNavigationView botNav = findViewById(R.id.botNav);
         botNav.setOnNavigationItemSelectedListener(navListener);
     }
@@ -34,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
                     switch (item.getItemId())
                     {
 
-                        case R.id.nav_add:
-                            selectedFragment = new fragment_add();
+                        case R.id.nav_shopping_cart:
+                            selectedFragment = new fragment_shopping_cart();
                             break;
 
 
@@ -44,11 +48,9 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
 
-                            case R.id.nav_home:
+                        case R.id.nav_home:
                             selectedFragment = new fragment_home();
                             break;
-
-
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
